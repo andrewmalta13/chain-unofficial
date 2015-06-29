@@ -1,0 +1,29 @@
+{
+  "name": "chain-unofficial",
+  "version": "0.0.1",
+  "description": "a wrapper around chain's api. Conforms to a standard derived from bitcoind and common-blockchain",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewmalta13/chain-unofficial"
+  },
+  "keywords": [
+    "blockchain",
+    "api",
+    "common-blockchain",
+    "bitcoind",
+    "standard",
+    "bitcoin",
+    "chain",
+    "chain.com"
+  ],
+  "author": "Andrew Malta <andrew.malta@yale.edu>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewmalta13/chain-unofficial/issues"
+  },
+  "homepage": "https://github.com/andrewmalta13/chain-unofficial"
+}
