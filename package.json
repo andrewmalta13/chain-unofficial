@@ -20,6 +20,10 @@
     "chain",
     "chain.com"
   ],
+  "maintainers": [
+    "Andrew Malta <andrew.malta@yale.edu>",
+    "Howard Wu <howardwu@berkeley.edu>"
+  ],
   "author": "Andrew Malta <andrew.malta@yale.edu>",
   "license": "ISC",
   "bugs": {
