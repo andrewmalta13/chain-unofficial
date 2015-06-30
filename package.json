@@ -4,7 +4,7 @@
   "description": "a wrapper around chain's api. Conforms to a standard derived from bitcoind and common-blockchain",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "source .env && node test/index.js"
   },
   "repository": {
     "type": "git",
@@ -29,5 +29,9 @@
   "bugs": {
     "url": "https://github.com/andrewmalta13/chain-unofficial/issues"
   },
-  "homepage": "https://github.com/andrewmalta13/chain-unofficial"
+  "homepage": "https://github.com/andrewmalta13/chain-unofficial",
+  "devDependencies": {
+    "abstract-common-blockchain": "^0.1.0",
+    "tape": "^4.0.0"
+  }
 }
