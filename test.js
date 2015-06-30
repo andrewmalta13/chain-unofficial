@@ -1,5 +1,7 @@
-var api = require("./index.js");
+var testnetOpts = {network: "testnet", key: "20eca2a0a7edc8b93d46a7b9f3729e6c", secret: "cad9f57fc061ee0524f6824fea6a4c6d"};
+var mainnetOpts = {network: "bitcoin", key: "20eca2a0a7edc8b93d46a7b9f3729e6c", secret: "cad9f57fc061ee0524f6824fea6a4c6d"};
 
+var chainApi = require("./index.js");
 
 function test(err, resp){
   if(err){
@@ -8,10 +10,6 @@ function test(err, resp){
     console.log(JSON.stringify(resp));
   }
 }
-
-var testnetOpts = {network: "testnet", key: "20eca2a0a7edc8b93d46a7b9f3729e6c", secret: "cad9f57fc061ee0524f6824fea6a4c6d"};
-var mainnetOpts = {network: "bitcoin", key: "20eca2a0a7edc8b93d46a7b9f3729e6c", secret: "cad9f57fc061ee0524f6824fea6a4c6d"};
-
 
 //ADDRESSES
 
@@ -48,9 +46,14 @@ var mainnetOpts = {network: "bitcoin", key: "20eca2a0a7edc8b93d46a7b9f3729e6c", 
 
 //api(mainnetOpts).Transactions.Outputs({"outputs" : [{txid: "9375818c85a6712416dac6edd403498180ee9ee0e604bd11ec35beaea384da51", vout: 0}]}, test);
 
- // api(testnetOpts).Transactions.Outputs({"outputs" : [{txid: "940d527cb2f75c2fd3a5edaab29932891f1738d82934ba8f3d9bff4d22ea33f5", vout: 0},
- //                                  {txid: "0409c167be7f367dbf5ba065b662c971dabfbc431a458af7dfb298f300026b86", vout: 1}]}, test);
+//api(testnetOpts).Transactions.Outputs({"outputs" : [{txid: "940d527cb2f75c2fd3a5edaab29932891f1738d82934ba8f3d9bff4d22ea33f5", vout: 0},
+//                                  {txid: "0409c167be7f367dbf5ba065b662c971dabfbc431a458af7dfb298f300026b86", vout: 1}]}, test);
 
+
+//api(mainnetOpts).Transactions.Status({"txids" : [{txid: "9375818c85a6712416dac6edd403498180ee9ee0e604bd11ec35beaea384da51", vout: 0}]}, test);
+
+// api(testnetOpts).Transactions.Status({"txids" : ["940d527cb2f75c2fd3a5edaab29932891f1738d82934ba8f3d9bff4d22ea33f5", 
+//                                                 "0409c167be7f367dbf5ba065b662c971dabfbc431a458af7dfb298f300026b86"]}, test);
 
 
 

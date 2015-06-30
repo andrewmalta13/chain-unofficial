@@ -28,6 +28,7 @@ function ChainAPI(opts) {
   ChainAPI.prototype.Transactions = Transactions(opts);
   ChainAPI.prototype.Blocks = Blocks(opts);
 
+  ChainAPI.prototype.getNetwork = function() { console.log(opts.network);}
 }
 
 module.exports = ChainAPI;
