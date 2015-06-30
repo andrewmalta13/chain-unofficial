@@ -33,5 +33,9 @@
   "devDependencies": {
     "abstract-common-blockchain": "^0.1.0",
     "tape": "^4.0.0"
+  },
+  "dependencies": {
+    "abstract-common-blockchain": "^0.1.0",
+    "tape": "^4.0.0"
   }
 }
