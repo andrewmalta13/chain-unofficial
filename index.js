@@ -1,7 +1,3 @@
-var Addresses = require('./lib/addresses.js');
-var Transactions = require('./lib/transactions.js');
-var Blocks = require('./lib/blocks.js');
-
 var assert = require('assert');
 var Chain = require('chain-node');
 
@@ -24,9 +20,11 @@ function ChainAPI(opts) {
 
   opts.chain = chain;
 
-  ChainAPI.prototype.Addresses = Addresses(opts);
-  ChainAPI.prototype.Transactions = Transactions(opts);
-  ChainAPI.prototype.Blocks = Blocks(opts);
+  return {
+    Addresses: require('./lib/addresses.js')(opts),
+    Blocks: require('./lib/blocks.js')(opts),
+    Transactions: require('./lib/transactions.js')(opts)
+  }
 }
 
 module.exports = ChainAPI;
