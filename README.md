@@ -22,10 +22,14 @@ var chain = require('chain-unofficial');
 you may specify the options you wish to make a call like so:
 
 ```javascript
-var mainnetOpts = {network: "bitcoin", key: "your chain api key", secret: "your chain api secret"}
+var chainClient = chain({
+  network: "bitcoin",
+  key: "your chain api key",
+  secret: "your chain api secret"
+});
 
 //example call
-chain(mainnetOpts).Addresses.Unspents(["address 1", "address 2", ...], callback);
+chainClient.Addresses.Unspents(["address 1", "address 2", ...], callback);
 ```
 
 alternatively you can check out the comments above each function in lib if you wish to understand what each function expects and returns.
