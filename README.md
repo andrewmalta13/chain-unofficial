@@ -9,6 +9,9 @@ npm install chain-unofficial
 ```
 <a href="https://github.com/blockai/abstract-common-blockchain">See abstract-common-blockchain for API</a>
 
+## Chain's Abstract Common Blockchain Coverage 
+  <a href="http://abstract-common-blockchain.herokuapp.com"> Use this link to see what Chain supports </a>
+
 ## Convention
 
 Standard convention is described fully in the types.json file in the link above.
